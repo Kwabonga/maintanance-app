@@ -1,0 +1,37 @@
+{%extends "base.html"%}{% block title %}User Report Page{%endblock%}
+{% block content %}
+    <form method="POST">
+      <h3 align="center">Report Form</h3>
+      <div class="form-group">
+        <label for="PlaceOf">Enter Campus</label>
+        <input
+          type="text"
+          class="form-control"
+          id="PlaceOf"
+          name="PlaceOf"
+          placeholder="Enter The Campus You Reporting From"
+        />
+      </div>
+      <div class="form-group">
+        <label for="BlockOf">Campus Block</label>
+        <input
+          type="text"
+          class="form-control"
+          id="BlockOf"
+          name="BlockOf"
+          placeholder="Enter The Campus block And Room Number You Reporting From "
+        />
+      </div>
+      <div class="form-group">
+        <label for="report_problem">Enter The Problem</label>
+        <input
+          type="text"
+          class="form-control"
+          id="report_problem"
+          name="Report_problem"
+          placeholder="Please State What The Problem Is And Try To be As Detailed As Possible"
+        />
+      <br />
+      <button type="submit" class="Report-btn">Submit</button>
+    </form>
+{% endblock %}
